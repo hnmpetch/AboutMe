@@ -1,0 +1,226 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #171d2b;
+  color: white;
+}
+
+.page {
+  margin: 30px 0;
+}
+
+.nav-bar {
+  display: inline-block;
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0a0f1c;
+  width: 100%;
+  z-index: 2;
+}
+
+.nav-li {
+  text-align: center;
+  float: left;
+  display: block;
+  padding: 10px 14px;
+  margin: 0;
+}
+
+.nav-item {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-li:hover {
+  background-color: #141c30;
+}
+
+.home-page {
+  margin: 0px;
+  width: 100%;
+  height: 160vw;
+  background-color: #15203b;
+  animation-name: zoomout-in;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  text-shadow: 5px 5px 10px #ffff;
+  text-align: center;
+  font-size: 32px;
+}
+
+.h1-1 {
+  margin: 0px 0px 8px 0px;
+  padding: 40% 0px 0px 0px;
+}
+
+.p1-1 {
+  padding: 0px 20px;
+
+}
+
+.about-page {
+  width: 100%;
+  height: auto;
+  padding: 40px 8px 0 0;
+  text-shadow: 5px 5px 10px #ffff;
+}
+
+.h1-2 {
+  margin: 8px 8px;
+  font-size: 32px;
+}
+
+.abt-item {
+  padding: 8px 8px;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.skill-page {
+  height: auto;
+  text-shadow: 5px 5px 10px #ffff;
+  width: 100%;
+  padding: 40px 8px 0 0;
+}
+
+.h1-3 {
+  font-size: 32px;
+  margin: 8px 8px;
+  padding: 8px 8px;
+}
+
+.skill-list {
+  margin: 8px 8px;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.skillbar {
+  width: 90%;
+  height: 20px;
+  background-color: gray;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  margin: 8px 0;
+  animation-name: slidein;
+  animation-duration: 1s;
+  box-shadow: 5px 5px 20px #73ffef;
+}
+
+.skillbar span {
+  display: block;
+  height: 30px;
+  text-align: right;
+  padding-right: 5px;
+  line-height: 17px;
+  color: #fff;
+  background-color: #4caf50;
+  font-size: 10px;
+}
+
+.contact-page {
+  height: auto;
+  width: 100%;
+  padding: 40px 8px 0 0;
+}
+
+.h1-4 {
+  text-shadow: 5px 5px 10px #ffff;
+  font-size: 32px;
+  margin: 8px 8px;
+  padding: 8px 8px;
+}
+
+.contact-list {
+  margin: 8px 8px;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.tr a {
+  text-decoration: none;
+  color: green;
+}
+
+.tr {
+  text-shadow: 5px 5px 10px green;
+
+}
+
+.fb {
+  text-shadow: 5px 5px 10px #405cff;
+}
+
+.li {
+  text-shadow: 5px 5px 10px green;
+}
+
+.gm {
+  text-shadow: 5px 5px 10px red;
+}
+
+.te {
+  text-shadow: 5px 5px 10px #eef78b;
+}
+
+.h1-5 {
+  text-shadow: 5px 5px 10px #ffff;
+  font-size: 32px;
+  margin: 30px 0px;
+  float: center;
+  padding: 20px;
+  animation-name: swing;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes zoomout-in {
+  0% {
+    border-radius: 0% 100% 80% 74% / 65% 0% 100% 35%;
+  }
+
+  100% {
+    border-radius: 0 150% 65% 59% / 50% 0% 100% 20%;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
